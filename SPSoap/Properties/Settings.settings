@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConsoleApplication1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConsoleApplication1_pri_schoen_Lists" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://schoen.pri:84/_vti_bin/Lists.asmx</Value>
+    </Setting>
+    <Setting Name="ConsoleApplication1_SPViews_Views" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://schoen.pri:84/_vti_bin/Views.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
