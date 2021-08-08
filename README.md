@@ -11,7 +11,68 @@ Originally I wanted to use perl to dynamically generate the VBA code from a wsdl
 
 ### VBA Integration
 
-Either include SPSoap.cls in your project or start by using the Example project. Also ensure a reference to MS XML, v3.0 exists. The following sample code shows how to access a SharePoint List and Display some results.
+Either include SPSoap.cls in your project or start by using the example.xlsm. Also ensure a reference to MS XML, v3.0 exists. The following sample code shows how to access a SharePoint List and Display some results.
+
+### Types Casts
+
+| SOAP Type           | VBA Type               |
+| ------------------- | ---------------------- |
+| System.String       | String                 |
+| System.Xml.XmlNode  | MSXML2.IXMLDOMNodeList |
+| System.Guid         | String                 |
+| Int32               | Integer                |
+| Byte[]              | Variant                |
+| Boolean             | Boolean                |
+
+All return types have been casted to MSXML2.IXMLDOMNodeList. This might requires adoptions for some functions - depending on your former usage.
+
+### Provided Functions
+
+#### Lists.asmx
+
+"AddAttachment",
+"AddDiscussionBoardItem",
+"AddList",
+"AddListFromFeature",
+"AddWikiPage",
+"ApplyContentTypeToList",
+"CheckInFile",
+"CheckOutFile",
+"CreateContentType",
+"DeleteAttachment",
+"DeleteContentType",
+"DeleteContentTypeXmlDocument",
+"DeleteList",
+"GetAttachmentCollection",
+"GetList",
+"GetListAndView",
+"GetListCollection",
+"GetListContentType",
+"GetListContentTypes",
+"GetListContentTypesAndProperties",
+"GetListItemChanges",
+"GetListItemChangesSinceToken",
+"GetListItemChangesWithKnowledge",
+"GetListItems",
+"GetVersionCollection",
+"UndoCheckOut",
+"UpdateContentType",
+"UpdateContentTypeXmlDocument",
+"UpdateContentTypesXmlDocument",
+"UpdateList",
+"UpdateListItems",
+"UpdateListItemsWithKnowledge" 
+
+#### Views.asmx
+
+"AddView",
+"DeleteView",
+"GetView",
+"GetViewCollection",
+"GetViewHtml",
+"UpdateView",
+"UpdateViewHtml",
+"UpdateViewHtml2"
 
 ### Sample code
 
