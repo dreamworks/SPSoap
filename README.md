@@ -1,4 +1,4 @@
-"# SPSoap" 
+# SPSoap
 
 ***VBA Class Libraries for SharePoint SOAP Communication***
 
